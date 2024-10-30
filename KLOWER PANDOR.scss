@@ -1,0 +1,34 @@
+body {
+    background-color: wheat;
+    height: 2000px;
+    // 把網頁拉高為了示範
+}
+.blackbar {
+    width: 100%;
+    height: 20px;
+    background: #000;
+}
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    transition: all .4s;
+    &-logo {
+        text-align: center;
+    }
+    &:hover {
+        background-color: #ffffffb6;
+        backdrop-filter: blur(3px);
+    }
+}
+
+.heroimg {
+    width: 100%;
+    height: 100vh;
+    margin-top: -64px;
+    // 往上推，跟.header重疊
+    background-image: url(photo.webp);
+    background-size: cover;
+}
